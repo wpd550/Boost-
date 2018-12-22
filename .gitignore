@@ -29,3 +29,10 @@
 *.swp
 *.DS_Store
 *.xcodeproj
+*.xcscmblueprint
+xcuserdata
+.#*
+*.rej
+*~
+#*#
+

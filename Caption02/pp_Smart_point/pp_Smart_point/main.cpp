@@ -73,8 +73,15 @@ void case3()
     
     cout<<"*sp ---> "<<*sp<<endl;
     cout<<"sp.cout"<<sp.use_count()<<"\n";
-    boost::shared_ptr<std::string> sp1 = sp;
+
+    {
+        boost::shared_ptr<std::string> sp1 = sp;
+        cout<<"sp.cout"<<sp.use_count()<<"\n";
+    }
+    sp.reset();
+    assert(sp);
     cout<<"sp.cout"<<sp.use_count()<<"\n";
+    cout<<"*sp ---> "<<*sp<<endl;
 }
 
 int main(int argc, const char * argv[]) {
