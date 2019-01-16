@@ -11,6 +11,7 @@
 #include <boost/pool/pool.hpp>
 #include <boost/pool/object_pool.hpp>
 
+#include "MemoryPoolTest.hpp"
 using namespace boost;
 
 //简单内存池的使用 POD
@@ -48,6 +49,8 @@ int main(int argc, const char * argv[]) {
     std::cout << "version == " <<BOOST_VERSION<<"\n";
     
 //    case1();
-    case2();
+//    case2();
+    
+    rand_test();
     return 0;
 }
